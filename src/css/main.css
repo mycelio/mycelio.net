@@ -7,3 +7,16 @@ body {
 .section {
   text-align: center;
 }
+
+.bg-black {
+  background-color: #000;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #91B7C7;
+}
+
+.bg-green {
+  background-color: #59A96A;
+}
