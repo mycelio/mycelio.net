@@ -12,7 +12,9 @@
   "dependencies": {
     "cpy-cli": "^2.0.0",
     "del-cli": "^1.1.0",
-    "fullpage.js": "^3.0.4",
-    "parcel-bundler": "^1.10.3"
+    "fullpage.js": "^3.0.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3"
   }
 }

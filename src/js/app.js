@@ -5,7 +5,7 @@ new fullpage('#fullpage', {
 	licenseKey: process.env.FULLPAGE_LICENSE,
 	navigation: false,
 	navigationPosition: 'left',
-	autoScrolling: false
+	// autoScrolling: false
 });
 
 //methods
