@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "develop": "parcel src/index.pug",
-    "build": "parcel build src/index.pug && cpy _redirects dist/",
+    "build": "parcel build src/index.pug",
     "clear": "del .cache/ && del dist/"
   },
   "dependencies": {
