@@ -3,28 +3,32 @@ html
   include includes/head.pug
   body
 
-    main#fullpage
+    main.fullpage
 
-      section#one
+      //- intro
+      section.intro
+        .connections
+          include images/connections.svg
         .inner
-          h2 Our relationship with the planet Earth is broken
+          h3.intro-text-1
+            | Our relationship with planet Earth is broken
+          h3.intro-text-2
+            | We have lost touch with
+            span.nature &nbsp;nature
+            span.technology ,&nbsp;technology
+            span.people &nbsp;and each other
+          h3.intro-text-3
+            | What if we turned to the nature&rsquor;s own internet<br/>to restore the connection?
 
-      section#two.intro.bg-black
-        .icon-left#nature
-          include images/icon-nature.svg
-        .icon-top
-          include images/icon-people.svg
-        .icon-right
-          include images/icon-phone.svg
-        .inner
-          h3 We have lost touch with the nature...
-      section#three.bg-blue
-        .inner
-          h3 Enter Mycelio
-      section#four.bg-green
+      //- benefits
+      section.benefits
         .inner
           h2 Benefits of mushrooms
 
+      //- product
+      section.product
+        .inner
+          h2 Eneter Mycelio
 
 
 

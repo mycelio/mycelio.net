@@ -1,9 +1,14 @@
 @import './normalize.css';
 @import './typebase.css';
-@import './animate.css';
+@import './animations.css';
+@import './sections/intro.css';
 
-body {
-  background: #f2f2f2;
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: white;
 }
 
 svg {
@@ -18,50 +23,20 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed darkgoldenrod;
+  /* border: 1px solid darkgoldenrod; */
+  background-color: #999;
+}
+
+.is-active {
+  z-index: 100;
+  background-color: white;
 }
 
 .inner {
-  max-width: 85%;
+  width: 95%;
   margin: 0 auto;
+  /* border: 1px dotted slateblue; */
 }
-
-
-/* intro */
-
-.intro .icon-top {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.intro .icon-top svg {
-  width: 240px;
-}
-
-.intro .icon-left {
-  position: absolute;
-  left: 15%;
-  bottom: 15%;
-}
-
-.intro .icon-left svg {
-  width: 240px;
-}
-
-
-.intro .icon-right {
-  position: absolute;
-  right: 15%;
-  bottom: 15%;
-}
-
-.intro .icon-right svg {
-  height: 200px;
-}
-
 
 
 
@@ -76,16 +51,4 @@ section {
 
 .bg-green {
   background-color: #59A96A;
-}
-
-
-section#four {
-  background-color:  darken($blue, 10%);
-  transition: all 0.4s linear;
-}
-
-section#four.is-active {
-
-    border: 5px solid red;
-
 }

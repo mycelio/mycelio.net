@@ -1,0 +1,17 @@
+/* .hidden {
+  visibility: hidden;
+  opacity: 1;
+  height: 0;
+  transition: all
+} */
+
+/* .fadeOut {
+  opacity: 1;
+  transition: all 0.75s ease-out;
+  visibility: visible;
+}
+
+.fadeOut.active {
+  opacity: 0;
+  visibility: hidden;
+} */

@@ -1,0 +1,168 @@
+.intro .connections {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2.5%;
+  height: 100%;
+
+  --green: #8BC53F;
+  --green-dark: #557925;
+}
+
+.intro .connections svg {
+  height: 100%;
+}
+
+.intro .inner {
+  position: relative;
+}
+
+.intro .inner h3 {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+}
+
+
+
+/* hide all SVG elements by default */
+.connections #people,
+.connections #technology,
+.connections #nature {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+}
+
+/* fade out first text */
+.intro-text-1 {
+  opacity: 1;
+  transition: all 0.65s ease-in-out;
+  visibility: visible;
+}
+
+.intro .fadeOut {
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+  visibility: hidden;
+}
+
+.intro .fadeIn {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.65s ease-in-out;
+}
+
+/* fade in second text */
+.intro-text-2 {
+  opacity: 0;
+  transition: all 0.65s ease-in-out;
+  visibility: hidden;
+}
+
+.intro-text-2.fadeIn {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.65s ease-in-out;
+}
+
+/* hide 2 spans */
+.intro-text-2 .technology,
+.intro-text-2 .nature,
+.intro-text-2 .people {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.65s ease-in;
+}
+
+/* fade in nature */
+.intro-text-2 .nature.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.connections #nature.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* fade in technology */
+.intro-text-2 .technology.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.connections #technology.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* fade in people */
+.intro-text-2 .people.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.connections #people.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* fade out intro-text-2 */
+.intro-text-2.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.65s ease-in-out;
+}
+
+
+/* fadein intro-text-3 */
+.intro-text-3 {
+  opacity: 0;
+  transition: all 0.75s ease-in;
+  visibility: hidden;
+}
+
+.intro-text-3.fadeIn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* fade in connections lines */
+.connections #line-1,
+.connections #line-2,
+.connections #line-3 {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1.5s ease-in-out;
+}
+
+.connections #line-1 {
+  stroke-dasharray: 364.42657470703125;
+  stroke-dashoffset: 364.42657470703125;
+}
+
+.connections #line-2 {
+  stroke-dasharray: 394.57318115234375;
+  stroke-dashoffset: 394.57318115234375;
+}
+
+.connections #line-3 {
+  stroke-dasharray: 356.9423828125;
+  stroke-dashoffset: 356.9423828125;
+}
+
+.connections #people.color,
+.connections #technology.color,
+.connections #nature.color {
+  stroke: var(--green-dark);
+}
+
+.connections #line-1.draw,
+.connections #line-2.draw,
+.connections #line-3.draw {
+  stroke-dashoffset: 0;
+  visibility: visible;
+  opacity: 1;
+}
