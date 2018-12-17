@@ -10,15 +10,12 @@
     "clear": "del .cache/ && del dist/"
   },
   "dependencies": {
-    "add": "^2.0.6",
     "cpy-cli": "^2.0.0",
+    "cssnano": "^4.1.7",
     "del-cli": "^1.1.0",
     "imports": "^1.0.0",
     "pug": "^2.0.3",
     "vivus": "^0.4.4",
     "yarn": "^1.12.3"
-  },
-  "devDependencies": {
-    "cssnano": "^4.1.7"
   }
 }
