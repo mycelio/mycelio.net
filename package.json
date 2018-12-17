@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "develop": "parcel src/index.pug",
-    "build": "del .cache/ && del dist/ && parcel build src/index.pug && cpy _redirects dist/",
+    "build": "parcel build src/index.pug && cpy _redirects dist/",
     "clear": "del .cache/ && del dist/"
   },
   "dependencies": {
@@ -17,5 +17,8 @@
     "pug": "^2.0.3",
     "vivus": "^0.4.4",
     "yarn": "^1.12.3"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.7"
   }
 }
