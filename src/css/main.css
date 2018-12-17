@@ -1,12 +1,69 @@
+@import './normalize.css';
 @import './typebase.css';
+@import './animate.css';
 
 body {
   background: #f2f2f2;
 }
 
-.section {
+svg {
+  vertical-align: middle;
+}
+
+section {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed darkgoldenrod;
+}
+
+.inner {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+
+/* intro */
+
+.intro .icon-top {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
   text-align: center;
 }
+
+.intro .icon-top svg {
+  width: 240px;
+}
+
+.intro .icon-left {
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+}
+
+.intro .icon-left svg {
+  width: 240px;
+}
+
+
+.intro .icon-right {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+}
+
+.intro .icon-right svg {
+  height: 200px;
+}
+
+
+
 
 .bg-black {
   background-color: #000;
@@ -19,4 +76,16 @@ body {
 
 .bg-green {
   background-color: #59A96A;
+}
+
+
+section#four {
+  background-color:  darken($blue, 10%);
+  transition: all 0.4s linear;
+}
+
+section#four.is-active {
+
+    border: 5px solid red;
+
 }

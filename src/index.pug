@@ -2,13 +2,31 @@ doctype html
 html
   include includes/head.pug
   body
-    div#fullpage
 
-      section.section.bg-black
-        h2 Our relationship with the planet Earth is broken
+    main#fullpage
 
-      section.section
-        h3 We have lost touch with the nature...
+      section#one
+        .inner
+          h2 Our relationship with the planet Earth is broken
+
+      section#two.intro.bg-black
+        .icon-left#nature
+          include images/icon-nature.svg
+        .icon-top
+          include images/icon-people.svg
+        .icon-right
+          include images/icon-phone.svg
+        .inner
+          h3 We have lost touch with the nature...
+      section#three.bg-blue
+        .inner
+          h3 Enter Mycelio
+      section#four.bg-green
+        .inner
+          h2 Benefits of mushrooms
+
+
+
 
 
     //- footer
