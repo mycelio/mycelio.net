@@ -11,19 +11,11 @@
   },
   "dependencies": {
     "add": "^2.0.6",
-    "aos": "^3.0.0-beta.6",
     "cpy-cli": "^2.0.0",
     "del-cli": "^1.1.0",
-    "fullpage.js": "^3.0.4",
-    "gsap": "^2.0.2",
     "imports": "^1.0.0",
-    "jquery": "^3.3.1",
-    "scrollmagic": "^2.0.6",
-    "scrollreveal": "^4.0.5",
+    "pug": "^2.0.3",
     "vivus": "^0.4.4",
     "yarn": "^1.12.3"
   },
-  "devDependencies": {
-    "pug": "^2.0.3"
-  }
 }
